@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Infraestructura.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Core", "Calendario.Core\Calendario.Core.csproj", "{2E7638F7-9D68-44A8-85DA-A704E5ED942A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Repositorios", "Calendario.Repositorios\Calendario.Repositorios.csproj", "{9700CD8A-93C1-45F8-9E48-A622F5C9F1AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2E7638F7-9D68-44A8-85DA-A704E5ED942A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E7638F7-9D68-44A8-85DA-A704E5ED942A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E7638F7-9D68-44A8-85DA-A704E5ED942A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9700CD8A-93C1-45F8-9E48-A622F5C9F1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9700CD8A-93C1-45F8-9E48-A622F5C9F1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9700CD8A-93C1-45F8-9E48-A622F5C9F1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9700CD8A-93C1-45F8-9E48-A622F5C9F1AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
