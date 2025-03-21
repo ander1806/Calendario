@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "01PDu6ZXFY8=",
+  "dgSpecHash": "k2QL0i6JUsQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sande\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sande\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

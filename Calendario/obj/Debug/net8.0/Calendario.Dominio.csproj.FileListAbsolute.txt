@@ -1,0 +1,12 @@
+C:\Users\sande\source\repos\Calendario\Calendario\bin\Debug\net8.0\Calendario.Dominio.deps.json
+C:\Users\sande\source\repos\Calendario\Calendario\bin\Debug\net8.0\Calendario.Dominio.dll
+C:\Users\sande\source\repos\Calendario\Calendario\bin\Debug\net8.0\Calendario.Dominio.pdb
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.AssemblyInfoInputs.cache
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.AssemblyInfo.cs
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.sourcelink.json
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.dll
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\refint\Calendario.Dominio.dll
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\Calendario.Dominio.pdb
+C:\Users\sande\source\repos\Calendario\Calendario\obj\Debug\net8.0\ref\Calendario.Dominio.dll

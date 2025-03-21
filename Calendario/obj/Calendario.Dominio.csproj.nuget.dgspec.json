@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {}
+    "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
+    "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj",
         "projectName": "Calendario.Dominio",
-        "projectPath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj",
+        "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj",
         "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\obj\\",
         "projectStyle": "PackageReference",

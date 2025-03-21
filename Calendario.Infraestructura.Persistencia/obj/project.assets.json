@@ -4724,9 +4724,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
       "projectName": "Calendario.Infraestructura.Persistencia",
-      "projectPath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
+      "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj",
       "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario.Infraestructura.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
@@ -4749,8 +4749,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
-              "projectPath": "C:\\Users\\sande\\Source\\Repos\\Calendario\\Calendario\\Calendario.Dominio.csproj"
+            "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
+              "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj"
             }
           }
         }

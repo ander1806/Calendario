@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Calendario.Core.Repositorios
 {
-    interface IFestivoRepositorio
+   public interface IFestivoRepositorio
     {
         // Obtener todos los festivos
         Task<IEnumerable<Festivo>> ObtenerTodos();

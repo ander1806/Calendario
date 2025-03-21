@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Calendario.Core\Calendario.Core.csproj" />
+    <ProjectReference Include="..\Calendario.Infraestructura.Persistencia\Calendario.Infraestructura.Persistencia.csproj" />
     <ProjectReference Include="..\Calendario\Calendario.Dominio.csproj" />
   </ItemGroup>
 
