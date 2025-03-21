@@ -1,6 +1,5 @@
 ﻿using Calendario.Core.Repositorios;
 using Calendario.Dominio.Entidades;
-using Calendario.Infraestructura.Persistencia.Contexto;
 using Microsoft.EntityFrameworkCore;
 
 
