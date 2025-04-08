@@ -1,0 +1,16 @@
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.deps.json
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Core.pdb
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Dominio.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\bin\Debug\net8.0\Calendario.Dominio.pdb
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.csproj.AssemblyReference.cache
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfoInputs.cache
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.AssemblyInfo.cs
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.csproj.CoreCompileInputs.cache
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.sourcelink.json
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendar.91159B91.Up2Date
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\refint\Calendario.Core.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\Calendario.Core.pdb
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Core\obj\Debug\net8.0\ref\Calendario.Core.dll

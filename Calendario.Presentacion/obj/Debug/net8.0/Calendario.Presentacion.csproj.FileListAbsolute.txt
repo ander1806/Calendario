@@ -1,0 +1,12 @@
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Calendario.Presentacion.deps.json
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Calendario.Presentacion.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Calendario.Presentacion.pdb
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.AssemblyInfoInputs.cache
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.AssemblyInfo.cs
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.sourcelink.json
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\refint\Calendario.Presentacion.dll
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.pdb
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\ref\Calendario.Presentacion.dll

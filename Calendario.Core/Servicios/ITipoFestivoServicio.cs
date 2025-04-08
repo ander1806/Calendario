@@ -1,13 +1,8 @@
 ﻿using Calendario.Dominio.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calendario.Core.Servicios
 {
-    interface ITipoFestivoServicio
+    public interface ITipoFestivoServicio
     {
         // Obtener todos los tipos de festivo
         Task<IEnumerable<TipoFestivo>> ObtenerTodos();

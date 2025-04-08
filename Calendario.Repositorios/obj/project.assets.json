@@ -2862,23 +2862,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sande\\.nuget\\packages\\": {},
+    "C:\\Users\\Yesika Simijaca\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Repositorios\\Calendario.Repositorios.csproj",
-      "projectName": "Calendario.Repositorios",
-      "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Repositorios\\Calendario.Repositorios.csproj",
-      "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Repositorios\\obj\\",
+      "projectUniqueName": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Repositorios\\Calendario.Infraestructura.Repositorios.csproj",
+      "projectName": "Calendario.Infraestructura.Repositorios",
+      "projectPath": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Repositorios\\Calendario.Infraestructura.Repositorios.csproj",
+      "packagesPath": "C:\\Users\\Yesika Simijaca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Repositorios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sande\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yesika Simijaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2887,20 +2887,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Core\\Calendario.Core.csproj": {
-              "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Core\\Calendario.Core.csproj"
+            "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Core\\Calendario.Core.csproj": {
+              "projectPath": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Core\\Calendario.Core.csproj"
             },
-            "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj"
+            "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario.Infraestructura.Persistencia\\Calendario.Infraestructura.Persistencia.csproj"
             },
-            "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
-              "projectPath": "C:\\Users\\sande\\source\\repos\\Calendario\\Calendario\\Calendario.Dominio.csproj"
+            "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario\\Calendario.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Yesika Simijaca\\OneDrive\\Documentos\\PASCUAL_BRAVO\\HERRAMIENTAS DE PROGRAMACION III\\Calendario\\Calendario\\Calendario\\Calendario.Dominio.csproj"
             }
           }
         }
@@ -2915,7 +2916,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2936,7 +2937,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
