@@ -3,7 +3,7 @@ using Calendario.Dominio.Entidades;
 using Calendario.Infraestructura.Persistencia.Contexto;
 using Microsoft.EntityFrameworkCore;
 
-namespace Calendario.Repositorios
+namespace Calendario.Infraestructura.Repositorios
 {
     public class FestivoRepositorio : IFestivoRepositorio
     {
@@ -27,8 +27,8 @@ namespace Calendario.Repositorios
         public async Task<IEnumerable<Festivo>> Buscar(int Tipo, string Dato)
         {
             return await _context.Festivos
-                .Where(item => (Tipo == 0 && item.Nombre.Contains(Dato))
-                            || (Tipo == 1 && item.TipoFestivo.Tipo.Contains(Dato)))
+                .Where(item => Tipo == 0 && item.Nombre.Contains(Dato)
+                            || Tipo == 1 && item.TipoFestivo.Tipo.Contains(Dato))
                 .ToArrayAsync();
         }
 
