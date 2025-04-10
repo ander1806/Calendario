@@ -19,8 +19,8 @@ namespace Calendario.Presentacion.DI
 
             // Repositorios
             servicios.AddTransient<IFestivoRepositorio, FestivoRepositorio>();
-            servicios.AddTransient<ITipoFestivoRepositorio, ITipoFestivoRepositorio>();
-            
+            servicios.AddTransient<ITipoFestivoRepositorio, TipoFestivoRepositorio>();
+
 
 
             // Servicios

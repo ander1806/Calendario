@@ -1,4 +1,4 @@
-ï»¿using Calendario.Core.Servicios;
+using Calendario.Core.Servicios;
 using Calendario.Dominio.Entidades;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +17,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         // Obtener todos los festivos
-        [HttpGet("listar")]        
+        [HttpGet("listar")]
         public async Task<IEnumerable<Festivo>> ObtenerTodos()
         {
             return await servicio.ObtenerTodos();
@@ -30,7 +30,7 @@ namespace Calendario.Presentacion.Controladores
             return await servicio.Obtener(id);
         }
 
-        // Buscar festivos segÃºn un tipo y un dato especÃ­fico
+        // Buscar festivos según un tipo y un dato específico
         [HttpGet("buscar/{tipo}/{dato}")]
         public async Task<IEnumerable<Festivo>> Buscar(int tipo, string dato)
         {
