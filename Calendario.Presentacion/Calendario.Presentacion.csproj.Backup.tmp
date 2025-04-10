@@ -7,14 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Calendario.Core\Calendario.Core.csproj" />
+    <ProjectReference Include="..\Calendario.Aplicacion\Calendario.Aplicacion.csproj" />
     <ProjectReference Include="..\Calendario.Infraestructura.Persistencia\Calendario.Infraestructura.Persistencia.csproj" />
     <ProjectReference Include="..\Calendario.Repositorios\Calendario.Infraestructura.Repositorios.csproj" />
+    <ProjectReference Include="..\Calendario\Calendario.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calendario.Infraestructura.Persistencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34a7ed8318ac3e415c2682b6d2de24cf63b4947b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+becb03423e0a72228161935af0108990c82401e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calendario.Infraestructura.Persistencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calendario.Infraestructura.Persistencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

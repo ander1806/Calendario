@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Calendario.Presentacion.Controladores
 {
     [ApiController]
-    [Route("api/campeonatos")]
+    [Route("api/festivos")]
     public class FestivoControlador : ControllerBase
     {
 
