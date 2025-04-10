@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calendario.Core\Calendario.Core.csproj" />
+    <ProjectReference Include="..\Calendario.Infraestructura.Persistencia\Calendario.Infraestructura.Persistencia.csproj" />
+    <ProjectReference Include="..\Calendario\Calendario.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>

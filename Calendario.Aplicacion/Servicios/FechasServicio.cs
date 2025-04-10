@@ -2,38 +2,37 @@
 {
     public class FechasServicio
     {
-        public DateTime ObtenerDomingoPascua(int año)
+        public  DateTime ObtenerDomingoPascua(int año)
         {
-            // Algoritmo gregoriano para cálculo preciso de Pascua
             int a = año % 19;
-            int b = año / 100;
-            int c = año % 100;
-            int d = b / 4;
-            int e = b % 4;
-            int f = (b + 8) / 25;
-            int g = (b - f + 1) / 3;
-            int h = (19 * a + b - d - g + 15) % 30;
-            int i = c / 4;
-            int k = c % 4;
-            int l = (32 + 2 * e + 2 * i - h - k) % 7;
-            int m = (a + 11 * h + 22 * l) / 451;
+            int b = año % 4;
+            int c = año % 7;
+            int d = (19 * a + 24) % 30;
 
-            int mes = (h + l - 7 * m + 114) / 31;
-            int dia = ((h + l - 7 * m + 114) % 31) + 1;
+            int dias = d + (2 * b + 4 * c + 6 * d + 5) % 7;
+            int mes = 3;
+            int dia = 15 + dias;
+            if (dia > 31)
+            {
+                mes = 4;
+                dia = dia - 31;
+            }
+
 
             return new DateTime(año, mes, dia);
         }
 
-        public DateTime CalcularFechaFestivo(int año, int diasPascua)
+        public DateTime agregarDias(DateTime fecha, int dias)
         {
-            DateTime domingoPascua = ObtenerDomingoPascua(año);
-            return domingoPascua.AddDays(diasPascua);
+            return fecha.AddDays(dias);
+
         }
 
         public DateTime SiguienteLunes(DateTime fecha)
         {
-            int diasHastaLunes = ((int)DayOfWeek.Monday - (int)fecha.DayOfWeek + 7) % 7;
-            return diasHastaLunes == 0 ? fecha.AddDays(7) : fecha.AddDays(diasHastaLunes);
+            DayOfWeek diaSemana = fecha.DayOfWeek;
+            int diasLunes = (DayOfWeek.Monday - diaSemana + 7) % 7;
+            return agregarDias(fecha, diasLunes);
         }
 
 

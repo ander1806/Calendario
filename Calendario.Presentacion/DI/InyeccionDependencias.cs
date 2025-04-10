@@ -4,8 +4,6 @@ using Calendario.Core.Servicios;
 using Calendario.Infraestructura.Persistencia.Contexto;
 using Calendario.Infraestructura.Repositorios;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Calendario.Presentacion.DI
 {
@@ -15,7 +13,7 @@ namespace Calendario.Presentacion.DI
                                                            IConfiguration configuracion)
         {
             servicios.AddDbContext<CalendarioContext>(options =>
-                options.UseSqlServer(configuracion.GetConnectionString("Calendario")));
+                options.UseSqlServer(configuracion.GetConnectionString("Festivos")));
 
             // Repositorios
             servicios.AddTransient<IFestivoRepositorio, FestivoRepositorio>();
@@ -26,6 +24,8 @@ namespace Calendario.Presentacion.DI
             // Servicios
             servicios.AddTransient<IFestivoServicio, FestivoServicio>();
             servicios.AddTransient<ITipoFestivoServicio, TipoFestivoServicio>();
+            servicios.AddTransient<FechasServicio>();
+
 
             return servicios;
         }
