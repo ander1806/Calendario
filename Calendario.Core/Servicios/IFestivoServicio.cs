@@ -1,4 +1,7 @@
-﻿using Calendario.Dominio.Entidades;
+﻿using Calendario.Dominio.DTOS;
+using Calendario.Dominio.Entidades;
+
+
 
 namespace Calendario.Core.Servicios
 {
@@ -9,6 +12,11 @@ namespace Calendario.Core.Servicios
 
         // Obtener un festivo por su Id
         Task<Festivo> Obtener(int Id);
+
+        // Verificar si una fecha es festivo
+        Task<bool> EsFestivo(int anio, int mes, int dia);
+
+       Task<List<FestivoResponseDTO>> ObtenerFestivosPorAnio(int anio);
 
         // Buscar festivos según un tipo y un dato específico
         Task<IEnumerable<Festivo>> Buscar(int Tipo, string Dato);

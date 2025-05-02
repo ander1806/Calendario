@@ -105,6 +105,58 @@
   },
   {
     "ContainingType": "Calendario.Presentacion.Controladores.FestivoControlador",
+    "Method": "EsFestivo",
+    "RelativePath": "api/festivos/es-festivo/{anio}/{mes}/{dia}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.FestivoControlador",
+    "Method": "ObtenerFestivosPorA\u00F1o",
+    "RelativePath": "api/festivos/festivos-por-anio/{anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Calendario.Dominio.DTOS.FestivoResponseDTO, Calendario.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.FestivoControlador",
     "Method": "ObtenerTodos",
     "RelativePath": "api/festivos/listar",
     "HttpMethod": "GET",

@@ -2,7 +2,7 @@
 {
     public class FechasServicio
     {
-        public  DateTime ObtenerDomingoPascua(int año)
+        public static  DateTime ObtenerDomingoPascua(int año)
         {
             int a = año % 19;
             int b = año % 4;
@@ -22,13 +22,13 @@
             return new DateTime(año, mes, dia);
         }
 
-        public DateTime agregarDias(DateTime fecha, int dias)
+        public static DateTime agregarDias(DateTime fecha, int dias)
         {
             return fecha.AddDays(dias);
 
         }
 
-        public DateTime SiguienteLunes(DateTime fecha)
+        public static DateTime SiguienteLunes(DateTime fecha)
         {
             DayOfWeek diaSemana = fecha.DayOfWeek;
             int diasLunes = (DayOfWeek.Monday - diaSemana + 7) % 7;

@@ -43,6 +43,96 @@
         }
       }
     },
+    "/api/festivos/es-festivo/{anio}/{mes}/{dia}": {
+      "get": {
+        "tags": [
+          "FestivoControlador"
+        ],
+        "parameters": [
+          {
+            "name": "anio",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "mes",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "dia",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/festivos/festivos-por-anio/{anio}": {
+      "get": {
+        "tags": [
+          "FestivoControlador"
+        ],
+        "parameters": [
+          {
+            "name": "anio",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FestivoResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FestivoResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FestivoResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/festivos/obtener/{id}": {
       "get": {
         "tags": [
@@ -618,6 +708,20 @@
           },
           "tipoFestivo": {
             "$ref": "#/components/schemas/TipoFestivo"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FestivoResponseDTO": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

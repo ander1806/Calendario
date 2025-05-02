@@ -1,6 +1,8 @@
 using Calendario.Core.Servicios;
+using Calendario.Dominio.DTOS;
 using Calendario.Dominio.Entidades;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Calendario.Presentacion.Controladores
 {
@@ -21,6 +23,30 @@ namespace Calendario.Presentacion.Controladores
         public async Task<IEnumerable<Festivo>> ObtenerTodos()
         {
             return await servicio.ObtenerTodos();
+        }
+
+        // Verificar si una fecha es festivo
+        [HttpGet("es-festivo/{anio}/{mes}/{dia}")]
+        public async Task<IActionResult> EsFestivo(int anio, int mes, int dia)
+        {
+
+            try
+            {
+                var esFestivo = await servicio.EsFestivo(anio, mes, dia);
+                return Ok(esFestivo);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            } 
+        }
+
+        // Obtener festivos por año
+        [HttpGet("festivos-por-anio/{anio}")]
+        public async Task<ActionResult<List<FestivoResponseDTO>>> ObtenerFestivosPorAño(int anio)
+        {
+            var festivos = await servicio.ObtenerFestivosPorAnio(anio);
+            return Ok(festivos);
         }
 
         // Obtener un festivo por su Id
