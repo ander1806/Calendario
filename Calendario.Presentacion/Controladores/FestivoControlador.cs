@@ -2,7 +2,6 @@ using Calendario.Core.Servicios;
 using Calendario.Dominio.DTOS;
 using Calendario.Dominio.Entidades;
 using Microsoft.AspNetCore.Mvc;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Calendario.Presentacion.Controladores
 {
