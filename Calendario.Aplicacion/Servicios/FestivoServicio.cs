@@ -10,12 +10,12 @@ namespace Calendario.Aplicacion.Servicios
     {
         private readonly IFestivoRepositorio repositorio;
 
-        
+
 
         public FestivoServicio(IFestivoRepositorio repositorio)
         {
             this.repositorio = repositorio;
-            
+
         }
 
         public async Task<Festivo> Agregar(Festivo festivo)
@@ -28,7 +28,7 @@ namespace Calendario.Aplicacion.Servicios
                 // Asignar día y mes al festivo
                 festivo.Dia = fechaFestivo.Day;
                 festivo.Mes = fechaFestivo.Month;
-                
+
             }
 
             return await repositorio.Agregar(festivo);
@@ -50,7 +50,7 @@ namespace Calendario.Aplicacion.Servicios
             }
 
             var festivos = await repositorio.ObtenerTodos();
-            
+
             DateTime domingoPascua = FechasServicio.ObtenerDomingoPascua(fecha.Year);
 
             foreach (var festivo in festivos)
@@ -119,32 +119,40 @@ namespace Calendario.Aplicacion.Servicios
         {
             DateTime fechaFestivo;
 
-            switch (festivo.IdTipo)
+            try
             {
-                case 1: // Fijo
-                    fechaFestivo = new DateTime(año, festivo.Mes, festivo.Dia);
-                    break;
+                switch (festivo.IdTipo)
+                {
+                    case 1: // Fijo no trasladable
+                        return new DateTime(año, festivo.Mes, festivo.Dia);
 
-                case 2: // Fijo trasladable
-                    fechaFestivo = new DateTime(año, festivo.Mes, festivo.Dia);
-                    fechaFestivo = FechasServicio.SiguienteLunes(fechaFestivo);
-                    break;
+                    case 2: // Fijo trasladable
+                        fechaFestivo = new DateTime(año, festivo.Mes, festivo.Dia);
+                        if (fechaFestivo.DayOfWeek == DayOfWeek.Sunday)
+                        {
+                            fechaFestivo = fechaFestivo.AddDays(1);
+                        }
+                        return fechaFestivo;
 
-                case 3: // Basado en Pascua
-                    fechaFestivo = domingoPascua.AddDays(festivo.DiasPascua);
-                    break;
+                    case 3: // Pascua no trasladable
+                        return domingoPascua.AddDays(festivo.DiasPascua);
 
-                case 4: // Basado en Pascua trasladable
-                    fechaFestivo = domingoPascua.AddDays(festivo.DiasPascua);
-                    fechaFestivo = FechasServicio.SiguienteLunes(fechaFestivo);
-                    break;
+                    case 4: // Pascua trasladable
+                        fechaFestivo = domingoPascua.AddDays(festivo.DiasPascua);
+                        if (fechaFestivo.DayOfWeek == DayOfWeek.Sunday)
+                        {
+                            fechaFestivo = fechaFestivo.AddDays(1);
+                        }
+                        return fechaFestivo;
 
-                default:
-                    throw new ArgumentException("Tipo de festivo no soportado");
+                    default:
+                        throw new ArgumentException($"Tipo de festivo no válido: {festivo.IdTipo}");
+                }
             }
-
-            return fechaFestivo.Date;
+            catch (Exception ex)
+            {
+                throw new Exception($"Error calculando festivo {festivo.Nombre} para el año {año}: {ex.Message}");
+            }
         }
-
     }
-    }
+}
