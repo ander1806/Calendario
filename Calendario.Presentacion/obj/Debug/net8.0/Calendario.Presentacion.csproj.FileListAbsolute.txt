@@ -100,3 +100,4 @@ C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGR
 C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\obj\Debug\net8.0\Calendario.Presentacion.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Yesika Simijaca\OneDrive\Documentos\PASCUAL_BRAVO\HERRAMIENTAS DE PROGRAMACION III\Calendario\Calendario\Calendario.Presentacion\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll

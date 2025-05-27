@@ -230,7 +230,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "Agregar",
-    "RelativePath": "api/tipofestivos/agregar",
+    "RelativePath": "api/tipo-festivo/agregar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -256,7 +256,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "Buscar",
-    "RelativePath": "api/tipofestivos/buscar/{tipo}/{dato}",
+    "RelativePath": "api/tipo-festivo/buscar/{tipo}/{dato}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -287,7 +287,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "Eliminar",
-    "RelativePath": "api/tipofestivos/eliminar/{id}",
+    "RelativePath": "api/tipo-festivo/eliminar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -313,7 +313,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "ObtenerTodos",
-    "RelativePath": "api/tipofestivos/listar",
+    "RelativePath": "api/tipo-festivo/listar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -333,7 +333,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "Modificar",
-    "RelativePath": "api/tipofestivos/modificar",
+    "RelativePath": "api/tipo-festivo/modificar",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -359,7 +359,7 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.TipoFestivoControlador",
     "Method": "Obtener",
-    "RelativePath": "api/tipofestivos/obtener/{id}",
+    "RelativePath": "api/tipo-festivo/obtener/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -373,6 +373,146 @@
     "ReturnTypes": [
       {
         "Type": "Calendario.Dominio.Entidades.TipoFestivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Actualizar",
+    "RelativePath": "api/usuarios/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "usuario",
+        "Type": "Calendario.Dominio.Dominio.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Crear",
+    "RelativePath": "api/usuarios/crear-usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "Calendario.Dominio.Dominio.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Calendario.Dominio.Dominio.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Eliminar",
+    "RelativePath": "api/usuarios/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/usuarios/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Calendario.Dominio.DTOS.UsuarioResponseListDTO, Calendario.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Login",
+    "RelativePath": "api/usuarios/login/{NombreUsuario}/{Clave}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NombreUsuario",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Clave",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Calendario.Dominio.DTOS.UsuarioDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Obtener",
+    "RelativePath": "api/usuarios/obtener-por-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Calendario.Dominio.Dominio.Usuario",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Calendario.Presentacion.Controladores
 {
     [ApiController]
-    [Route("api/tipofestivos")]
+    [Route("api/tipo-festivo")]
     public class TipoFestivoControlador
     {
         private readonly ITipoFestivoServicio servicio;

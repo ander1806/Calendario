@@ -1,4 +1,5 @@
-﻿using Calendario.Dominio.Entidades;
+﻿using Calendario.Dominio.Dominio;
+using Calendario.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace Calendario.Infraestructura.Persistencia.Contexto
@@ -10,10 +11,19 @@ namespace Calendario.Infraestructura.Persistencia.Contexto
         // DbSets para cada entidad
         public DbSet<Festivo> Festivos { get; set; }
         public DbSet<TipoFestivo> TiposFestivo { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            
+
+            //base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Usuario>(entidad =>
+            {
+                entidad.HasKey(e => e.Id);
+                entidad.HasIndex(e => e.NombreUsuario).IsUnique();
+            });
 
             // Configuración de TipoFestivo
             modelBuilder.Entity<TipoFestivo>(entidad =>

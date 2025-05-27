@@ -18,6 +18,8 @@ namespace Calendario.Presentacion.DI
             // Repositorios
             servicios.AddTransient<IFestivoRepositorio, FestivoRepositorio>();
             servicios.AddTransient<ITipoFestivoRepositorio, TipoFestivoRepositorio>();
+            servicios.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+
 
 
 
@@ -25,6 +27,7 @@ namespace Calendario.Presentacion.DI
             servicios.AddTransient<IFestivoServicio, FestivoServicio>();
             servicios.AddTransient<ITipoFestivoServicio, TipoFestivoServicio>();
             servicios.AddTransient<FechasServicio>();
+            servicios.AddTransient<IUsuarioServicio, UsuarioServicio>();
 
 
             return servicios;
