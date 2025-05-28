@@ -22,6 +22,40 @@ namespace Calendario.Aplicacion.Servicios
             this.repositorio = repositorio;
             this.claveSecreta = config["Jwt:Key"];
         }
+
+        public async Task<UsuarioDTO> ValidarUsuario(string NombreUsuario, string Clave)
+        {
+            var usuarioDto = new UsuarioDTO();
+            var usuario = await repositorio.ValidarUsuario(NombreUsuario, Clave);
+            if (usuario != null)
+            {
+                usuarioDto.usuario = usuario;
+                usuarioDto.token = GenerarToken(NombreUsuario);
+            }
+            return usuarioDto;
+        }
+
+        private string GenerarToken(string nombreUsuario)
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(claveSecreta));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+            new Claim(ClaimTypes.Name, nombreUsuario)
+        };
+
+            var token = new JwtSecurityToken(
+                issuer: "apiCalendario",
+                audience: "apiCalendario",
+                claims: claims,
+                expires: DateTime.UtcNow.AddHours(1),
+                signingCredentials: creds
+            );
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            return tokenHandler.WriteToken(token);
+        }
         public async Task<Usuario> Agregar(Usuario Usuario)
         {
             if(Usuario == null)
@@ -106,43 +140,7 @@ namespace Calendario.Aplicacion.Servicios
             }
 
             return usuario;
-        }
-
-        
-
-        private string GenerarToken(string nombreUsuario)
-        {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(claveSecreta));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var claims = new[]
-            {
-            new Claim(ClaimTypes.Name, nombreUsuario)
-        };
-
-            var token = new JwtSecurityToken(
-                issuer: "apiCalendario",
-                audience: "apiCalendario",
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(1),
-                signingCredentials: creds
-            );
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            return tokenHandler.WriteToken(token);
-        }
-
-        public async Task<UsuarioDTO> ValidarUsuario(string NombreUsuario, string Clave)
-        {
-            var usuarioDto = new UsuarioDTO();
-            var usuario = await repositorio.ValidarUsuario(NombreUsuario, Clave);
-            if (usuario != null)
-            {
-                usuarioDto.usuario = usuario;
-                usuarioDto.token = GenerarToken(NombreUsuario);
-            }
-            return usuarioDto;
-        }
+        }        
 
         public Task<IEnumerable<List<UsuarioResponseListDTO>>> ObtenerTodos()
         {

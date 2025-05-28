@@ -384,27 +384,6 @@
   },
   {
     "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
-    "Method": "Actualizar",
-    "RelativePath": "api/usuarios/actualizar/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "usuario",
-        "Type": "Calendario.Dominio.Dominio.Usuario",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
     "Method": "Crear",
     "RelativePath": "api/usuarios/crear-usuario",
     "HttpMethod": "POST",
@@ -468,19 +447,14 @@
   {
     "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
     "Method": "Login",
-    "RelativePath": "api/usuarios/login/{NombreUsuario}/{Clave}",
-    "HttpMethod": "GET",
+    "RelativePath": "api/usuarios/login",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NombreUsuario",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "Clave",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "Calendario.Dominio.DTOS.UsuarioRequestLoginDTO",
         "IsRequired": true
       }
     ],
@@ -495,6 +469,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",
+    "Method": "Actualizar",
+    "RelativePath": "api/usuarios/modificar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "usuario",
+        "Type": "Calendario.Dominio.Dominio.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Calendario.Presentacion.Controladores.UsuarioControlador",

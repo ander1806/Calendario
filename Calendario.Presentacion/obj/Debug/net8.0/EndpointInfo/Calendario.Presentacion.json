@@ -637,29 +637,30 @@
         }
       }
     },
-    "/api/usuarios/login/{NombreUsuario}/{Clave}": {
-      "get": {
+    "/api/usuarios/login": {
+      "post": {
         "tags": [
           "UsuarioControlador"
         ],
-        "parameters": [
-          {
-            "name": "NombreUsuario",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Clave",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioRequestLoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioRequestLoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioRequestLoginDTO"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -810,7 +811,7 @@
         }
       }
     },
-    "/api/usuarios/actualizar/{id}": {
+    "/api/usuarios/modificar/{id}": {
       "put": {
         "tags": [
           "UsuarioControlador"
@@ -1024,6 +1025,20 @@
             "$ref": "#/components/schemas/Usuario"
           },
           "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioRequestLoginDTO": {
+        "type": "object",
+        "properties": {
+          "nombreUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "clave": {
             "type": "string",
             "nullable": true
           }

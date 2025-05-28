@@ -16,10 +16,10 @@ namespace Calendario.Presentacion.Controladores
             this.servicio = servicio;
         }
 
-        [HttpGet("login/{NombreUsuario}/{Clave}")]
-        public async Task<UsuarioDTO> Login(String NombreUsuario, String Clave)
+        [HttpPost("login")]
+        public async Task<UsuarioDTO> Login([FromBody] UsuarioRequestLoginDTO request)
         {
-            return await servicio.ValidarUsuario(NombreUsuario, Clave);
+            return await servicio.ValidarUsuario(request.NombreUsuario, request.Clave);
         }
 
         [HttpGet("listar/")]
@@ -73,7 +73,7 @@ namespace Calendario.Presentacion.Controladores
             }
         }
 
-        [HttpPut("actualizar/{id}")]
+        [HttpPut("modificar/{id}")]
         public async Task<ActionResult> Actualizar(int id, [FromBody] Usuario usuario)
         {
             try
