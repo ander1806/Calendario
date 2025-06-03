@@ -1,6 +1,8 @@
-﻿using Calendario.Core.Servicios;
+﻿
+using Calendario.Core.Servicios;
 using Calendario.Dominio.Dominio;
 using Calendario.Dominio.DTOS;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Calendario.Presentacion.Controladores
@@ -23,6 +25,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         [HttpGet("listar/")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<UsuarioResponseListDTO>>> ObtenerTodos()
         {
             try
@@ -37,6 +40,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         [HttpGet("obtener-por-id/{id}")]
+        [Authorize]
         public async Task<ActionResult<Usuario>> Obtener(int id)
         {
             try
@@ -53,6 +57,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         [HttpPost("crear-usuario/")]
+        [Authorize]
         public async Task<ActionResult<Usuario>> Crear([FromBody] Usuario usuario)
         {
             try
@@ -74,6 +79,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         [HttpPut("modificar/{id}")]
+        [Authorize]
         public async Task<ActionResult> Actualizar(int id, [FromBody] Usuario usuario)
         {
             try
@@ -98,6 +104,7 @@ namespace Calendario.Presentacion.Controladores
         }
 
         [HttpDelete("eliminar/{id}")]
+        [Authorize]
         public async Task<ActionResult> Eliminar(int id)
         {
             try
